@@ -211,5 +211,23 @@ main.container {
         width: 100px;
         height: 100px;
     }
-}
+
+    /* Tabla materias*/
+
+    th, td {
+        padding: 10px;
+        font-size: 0.95em;
+      }
+    
+      table {
+        font-size: 0.9em;
+      }
+    
+      td:nth-child(1),
+      td:nth-child(2),
+      td:nth-child(3) {
+        display: table-cell;
+        min-width: auto;
+      }
+    }
 
