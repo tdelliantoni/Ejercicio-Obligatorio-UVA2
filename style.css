@@ -105,40 +105,72 @@ footer {
 
 form {
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 8px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
 
 form label {
-    display: block;
-    margin-bottom: 5px;
     font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1em;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 16px;
+    font-size: 1em;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: inherit;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
 }
 
 form button {
     background-color: #007BFF;
-    color: #fff;
+    color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 14px;
+    font-size: 1em;
     font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
     background-color: #0056b3;
 }
+
+
+/* Footer Abajo de la página */ 
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main.container {
+    flex: 1;
+}
+
 
 /* Responsive */
 
